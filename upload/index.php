@@ -2,11 +2,11 @@
 <html>
     <head>
         <title>Asynchronous upload</title>
-        <link href="../../../../styles/kendo.common.css" rel="stylesheet"/>
-        <link href="../../../../styles/kendo.blueopal.css" rel="stylesheet"/>
-        <script src="../../../../src/jquery.js"></script>
-        <script src="../../../../src/kendo.core.js"></script>
-        <script src="../../../../src/kendo.upload.js"></script>
+        <link href="kendo.common.css" rel="stylesheet"/>
+        <link href="kendo.default.css" rel="stylesheet"/>
+        <script src="jquery.js"></script>
+        <script src="kendo.core.js"></script>
+        <script src="kendo.upload.js"></script>
     </head>
 
     <body>
