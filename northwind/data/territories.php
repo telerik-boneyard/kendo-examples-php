@@ -11,12 +11,8 @@ $rs = mysql_query("SELECT TRIM(t.TerritoryDescription) AS TerritoryDescription
 				   INNER JOIN Employees e ON et.EmployeeID = e.EmployeeID
 				   WHERE e.EmployeeID = " .$employeeID);
 				    
-while($obj = mysql_fetch_object($rs)) {
-	$arr[] = $obj;
+while($obj[] = mysql_fetch_object($rs)) {
+	$arr["data"] = $obj;
 }
-
-// add the header line to specify that the content type is JSON
 header("Content-type: application/json"); 
-
-echo "{\"data\":" .json_encode($arr). "}";
-?>
+echo json_encode($arr);
